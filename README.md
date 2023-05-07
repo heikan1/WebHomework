@@ -1,2 +1,28 @@
 #Web Homework
-Bilgi dökümanı
+--Bilgi dökümanı
+
+Proje boyunca kullanacağım teknolojiler:
++html
++css
++bootstrap
++react
++nodejs (react kullanmak için)
++php
+
+Projenin kapsamı:
++Şuanlık ilk hedefim ödev dokümanında gerekli olan özellikleri sağlamak
+sonrasında da özellikle sitenin görüntüsünü iyileştirmekle alakalı geliştirmeler
+yapmayı istiyorum.
+
+Projenin ilerleyişi:
++İlk olarak html,css ve bootstrap kullanarak sitenin frontend tasarımını gerçekleştireceğim
++Tasarım netlik kazandıktan sonra react kullanarak interaktivite ekleyeceğim
++En son php kullanarak backend kısmını yapacağım
+
+Commitlerde yapılanlar:
+-07.05.23
+react dosyaları eklendi ve projenin setupı kurulmaya başlandı
+html taslağı oluşturuldu
+bootstrap eklendi
+-06.05.23
+projenin olabilecek en basit dosyaları oluşturuldu ve githuba yüklendi

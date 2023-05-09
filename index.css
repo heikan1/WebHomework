@@ -1,10 +1,34 @@
-img.rounded-corners {
-    border-radius: 15px;
-    margin-top: 15px;
-  }
-h1.selam{
-    margin-left: 15px;
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.sticky-top{
+
 }
-div.image-section{
-    margin-left: 15px;
+
+button.under-photo{
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    color: black;
+    border: none;
+    font-size: 12px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+#my-photo{
+    width: 250px;
+}
+
+#photo-side{
+  
+    
+}
+#under-photo{
+    margin-top:15px;
+    border-spacing: 30px;
+}
+#page{
+    margin: 15px;
+}
+
+a{
+    float: left;
 }

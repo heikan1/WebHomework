@@ -47,27 +47,99 @@
       <div class="page">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-4 col-md-12" style=" background-color: red;">
+                <div class="col-xl-4 col-md-12" >
                     <img id = "my-photo"src="/assets/watashiNoPhoto.jpg" alt="ben">
     
                 </div>
-                <div class="col-xl-8 col-md-12" style="background-color: blue;">
-                    <h3 style="color:rgb(230, 74, 188) ;">METIN HAKAN YILMAZ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus soluta, nulla, hic quasi id sit suscipit laborum, alias maiores quo quaerat eius sapiente assumenda asperiores necessitatibus cupiditate! Doloremque, rem accusantium!</p>                          
-                            
-                    <div class="card-buttons">
-                        <button class="under-photo" onclick="window.open(githubUrl)" target ="blank"><i class="fa-brands fa-github" style="font-size: 200%;"></i><br>Github</a></button>
-                        <button class="under-photo" onclick="window.open(artstationUrl)" target ="blank"><i class="fa-brands fa-artstation"style="font-size:200%;"></i><br>Artstation</button>
-                                                    
-                        <button class="under-photo"onclick="window.open(twitterUrl)" target ="blank"><i class="fa-brands fa-twitter"style="font-size: 200%;"></i><br>Twitter</button>
-                        <button class="under-photo"onclick="window.open(discordUrl)" target ="blank"><i class="fa-brands fa-discord"style="font-size: 200%;"></i><br>Discord</button>
-                    </div>    
-                </div>
-                
+                <div class="col-xl-8 col-md-12" >
+                    <h3 style="color:rgb(230, 74, 188) ;">Hakkında</h3>
+                    <p>Ben Hakan, sakarya üniversitesinde bilgisayar mühendisliği öğrencisiyim.</p>
+                    <br>
+                    <h4>Hobiler</h4>
+                    <ul>
+                      <li>Oyunlar oynamak ve üzerlerine düşünmek</li>
+                      <li>Resim çizmek ve görseller üreten yapay zekalar kullanmak</li>
+                      <li>Dart, masa tenisi ve bilardo oynamak</li>
+                      <li>Anime izlemek</li>
+                    </ul>           
+                    <div class="row">
+                      <div class="col-2">
+                        <button onclick="window.open(githubUrl)" class ="under-photo"target ="blank"><img src="/assets/mal.png" style ="width: 35px; border-radius: 10%; text-align: center;" alt=""><br>Anime</a></button>
+                      </div>
+                        <div class="col-2">
+                          <button onclick="window.open(steamUrl)" class ="under-photo" target ="blank"><i class="fa-brands fa-square-steam"style="font-size:300%;"></i><br>Oyun</button>
+                        </div>
+                        <div class="col-2">
+                          <button onclick="window.open(artstationUrl)" class ="under-photo" target ="blank"><i class="fa-brands fa-artstation"style="font-size:300%;"></i><br>Çizim</button>
+                        </div>
+                    </div>  
+                    <br>         
+                  </div>
+                  
+                  <hr style="color: rgb(230, 74, 188); height:2px; border-width:5px;">
+
+                  <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 2</div>
+                      <img src="/assets/hakan-yilmaz-wunn-ve-pan-sahilde-mafya.jpg" style="width: 100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 2</div>
+                      <img src="/assets/mal.png" style="width:100%">
+                      <div class="text">iki Text</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  </div>
+                  
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                  </div>
             </div>
           </div>
     
     </div>
+
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+    <script>
+      var malUrl = 'https://github.com/heikan1';
+      var artstationUrl = 'https://www.artstation.com/heikan';
+      var steamUrl = 'https://steamcommunity.com/id/heikan/';
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

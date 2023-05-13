@@ -14,6 +14,7 @@ div.page{
 
 }
 
+
 button.under-photo{
   width: 60px;
   height: 60px;
@@ -27,7 +28,7 @@ button.under-photo{
 #my-photo{
     margin-left: 5px;
     border-radius: 20px;
-    width: 200px;
+    width: 100%;
 }
 #container{
   

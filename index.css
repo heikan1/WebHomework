@@ -18,8 +18,8 @@ div.page{
     border-color: rgb(230, 74, 188);
     background-color: rgb(255, 215, 249);
     border-radius: 25px;
-    left: 50%;
-    transform: translate(-50%);
+    /*left: 50%;*/
+    /*transform: translate(-50%);*/
     position: absolute;
     padding: 10px;
 

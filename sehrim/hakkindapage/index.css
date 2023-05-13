@@ -1,0 +1,26 @@
+div.page{
+    margin-top: 50px;
+    border: 3px solid;
+    border-color: rgb(230, 74, 188);
+    background-color: rgb(255, 215, 249);
+    border-radius: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    padding: 10px;
+
+    /*display: grid;
+    grid-template-columns: 1fr 2fr;*/
+
+}
+#my-photo{
+    margin-left: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.fitToDiv {
+    top: 50%;
+    left: 1%;
+    right: 1%;
+}

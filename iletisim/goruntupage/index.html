@@ -5,10 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Görüntü</title>
-    <script src="/iletisim/iletisim.js"></script>
+    <script>
+      function getElements() {
+        document.getElementById("fnameResult").innerHTML =
+          localStorage.getItem("fname");
+        document.getElementById("lnameResult").innerHTML =
+          localStorage.getItem("lname");
+        document.getElementById("emailResult").innerHTML =
+          localStorage.getItem("email");
+        document.getElementById("iletisimResult").innerHTML =
+          localStorage.getItem("email");
+        document.getElementById("uyari").innerHTML = "";
+      }
+    </script>
   </head>
   <body>
-    <span id="goruntuText">deneme</span>
-    <script src="/iletisim/iletisim.js"></script>
+    <span>First name: </span>
+    <span id="fnameResult"></span><br />
+    <span>Last name: </span>
+    <span id="lnameResult"></span><br />
+    <span>Email: </span>
+    <span id="emailResult"></span><br />
+    <span>İlettikleriniz: </span>
+    <span id="iletisimResult"></span><br />
+    <span id="uyari">İletişim kısmını henüz kullanmadığınızdan boşlar</span>
+
+    <script>
+      getElements();
+    </script>
   </body>
 </html>

@@ -22,11 +22,13 @@ function validateForm() {
     alert("geçersiz email");
     return false;
   } else {
-    alert(
-      "iletiniz alındı, goruntu sayfasından görüntüleyebilirsinşz" + goruntuHtml
-    );
+    alert("iletiniz alındı, goruntu sayfasından görüntüleyebilirsinşz");
 
-    goruntuHtml.innerHTML = "aaa";
+    localStorage.setItem("fname", fname);
+    localStorage.setItem("lname", lname);
+    localStorage.setItem("email", email);
+    localStorage.setItem("iletisim", iletisim);
+
     return true;
   }
 }

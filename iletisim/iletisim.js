@@ -22,7 +22,7 @@ function validateForm() {
     alert("geçersiz email");
     return false;
   } else {
-    alert("iletiniz alındı, goruntu sayfasından görüntüleyebilirsinşz");
+    alert("iletiniz alındı, goruntu sayfasından görüntüleyebilirsiniz!");
 
     localStorage.setItem("fname", fname);
     localStorage.setItem("lname", lname);
